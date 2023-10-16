@@ -118,7 +118,7 @@ def predict(result):
         data = json.loads(json.loads(result.decode("utf-8")))
         # print(type(data))
 
-        df = pd.DataFrame(data, columns=["Patient Id", "image_filename", "Actual_class", "predicted_class","Adeno","Largecell","Squamouscell","Normal"])
+        df = pd.DataFrame(data, columns=["Patient Id", "image_filename", "Actual Class", "predicted_class","Adeno","Largecell","Squamouscell","Normal"])
     except urllib.error.HTTPError as error:
         print("The request failed with status code: " + str(error.code))
                 
