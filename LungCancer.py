@@ -179,7 +179,7 @@ def predict(result):
 def first():
 
     st.markdown("<h1 style='text-align: center; color: green;'>Lung Cancer Classification</h1>", unsafe_allow_html=True)
-    img = Image.open("C:/Users/nikunj.bedia/testing_streamlit/DSA_Repo-main/lung_cancer.jpg")
+    img = Image.open("lung_cancer.jpg")
     resized_img = img.resize((350, 300))
     with st.columns(3)[1]:
         st.image(resized_img)
